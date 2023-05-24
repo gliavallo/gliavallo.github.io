@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from salemove.github.io/demo-websites/sales-demo-site/training/application-autoinsurance.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Apr 2021 19:35:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cortex Financial Demo</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/update-styles.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body onload="pageType(), loggingToggle()">
+    <!-- /.top-bar -->
+   <div class="header-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 logo-login-button">
+                    <!-- logo -->
+                    <div class="logo">
+                        <img src="images/Cortex_v1_140x70px.png" alt="Cortex - Insurance Company Website Template">
+                    </div>
+                    <div class="login-section"></div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation-2">
+            <div class="container" onclick="menuCloser()">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                       <div id="navigation">
+                        <!-- navigation start-->
+                            <ul id="menu-options">
+                                <li onmouseover="menuHover('homeDrop')" onmouseout="menuHoverOut('homeDrop')" id="homebutton" ><a href="" title="Home" class="animsition-link">Home</a>
+                                    <ul id="homeDrop">
+                                        <li><a href="index.html" title="Site Home" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Cortex Home</a></li>
+                                        <li><a href="portal-agentprofile.html" title="Portal Home" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Agent Profile</a></li>
+                                    </ul>
+                                </li>
+                                 <li onmouseover="menuHover('incentDrop')" onmouseout="menuHoverOut('incentDrop')" id="incentButton"><a href="" title="Incentives" class="animsition-link">Incentives</a>
+                                    <ul id="incentDrop">
+                                        <li><a href="portal-commission.html" title="Current commission" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Current Commission</a></li>
+                                        <li><a href="portal-commission2.html" title="Statements" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Statements</a></li>
+                           		</ul>
+                                </li>
+                                <li onmouseover="menuHover('custDrop')" onmouseout="menuHoverOut('custDrop')" id="custButton" ><a href="" title="Customers" class="animsition-link">Customers</a>
+                                    <ul id="custDrop">
+                                        <li><a href="portal-customers.html" title="Credit Cards" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Customer Accounts</a></li>
+                                        <li><a href="portal-policies.html" title="Policies" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Policies</a></li>
+                                        <li><a href="portal-claims.html" title="Claims" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Claims</a></li>
+                                    </ul>
+                                </li>
+                                <li onmouseover="menuHover('complianceDrop')" onmouseout="menuHoverOut('complianceDrop')"><a href="" class="animsition-link">Compliance</a>
+                                    <ul id="complianceDrop">
+                                        <li><a href="portal-licenses.html" title="Licenses" class="animsition-link" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Licenses</a></li>
+                                        <li><a href="portal-appointments.html" title="Appointments" class="animsition-link" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Appointments</a></li>
+                                        <li><a href="portal-appointmentapp.html" title="Insurance Portal" class="animsition-link" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Request Appointment</a></li>
+                                    </ul>
+                                </li>
+                                <li id="contact-us"><a href="beforetex.html" title="Contact us" class="animsition-link">Contact us</a></li>
+                            </ul>
+                            <ul id="language-list">
+                                <li onmouseover="menuHover('languageDrop')" onmouseout="menuHoverOut('languageDrop')" class="language-selector"><a href="#" title="Language" class="animsition-link">Language</a>
+                                    <ul id="languageDrop">
+                                        <li>
+                                            <a onclick="toggleSpanish();" href="#" title="Spanish" id="spanishLocale" class="btn" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Spanish</a>
+                                            <a onclick="toggleEnglish();" href="#" title="English" id="englishLocale" class="btn" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">English</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navigation start-->
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="page-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="banking.html">Portal</a></li>
+                            <li class="active">Application</li>
+                        </ol>
+                    </div>
+                </div>
+                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="bg-white pinside30">
+                        <div class="row">
+                           <div class="col-xl-4 col-lg-4 col-md-9 col-sm-12 col-12">
+                                <h1 class="page-title">Transaction</h1>
+                            </div>
+         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <!-- content start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="wrapper-content bg-white pinside40">
+                        <div class="contact-form mb60">
+                            <div class=" ">
+                                    <form class="default-application" name="default-application">
+                                        <div class=" ">
+                                            <div class="col-sm-12 col-12">
+                                                <p class="form-sub-title">Commission Transaction ID #382956-433</p>
+                                            </div>
+                                            <!-- Text input-->
+                                            <div class="row"> <form>
+                                            <div class="col-xl-4 col-lg-4 col-sm-8 col-xs-8 col-8">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="first-name">&nbsp;Policy #</label>
+                                                    <input id="first-name" name="first-name" type="text" class="form-control input-md" Value="CI-382956 " >
+                                                </div>
+                                            </div>
+                                            <!-- Text input-->
+                                            <div class="col-xl-2 col-lg-2 col-2 col-xs-4 col-4">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="middle-initial">Type&nbsp;</label>
+                                                    <input id="middle-initial" name="middle-initial" type="text" class="form-control input-md" Value="Auto">
+                                                </div>
+                                            <!-- Text input-->
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 col-12">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="last-name">Insured&nbsp; Name</label>
+                                                    <input id="last-name" name="last-name" type="text" class="form-control input-md" Value="Atkins, David R">
+                                                </div>
+                                            </div>
+												
+												  <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 col-12">
+                                                <div class="form-group" id="income-div">
+                                                    <label class="control-label" id="income-label" for="annual-income">insured address</label>
+                                                    <input id="annual-income" name="annual-income" type="text"  class="form-control currency input-md" Value="648 3rd Avenue New York, #1002, NY, 10016" >
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 col-12">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="rent-mortgage">Phone</label>
+                                                    <input id="rent-mortgage" name="rent-mortgage" type="text" placeholder="$" class="form-control currency input-md" Value="Home: 212 665 3342">
+                                                </div>
+                                            </div>
+												<div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 col-12">
+                                                <div class="form-group" id="income-div">
+                                                    <label class="control-label" id="income-label" for="annual-income">Asset Insured</label>
+                                                    <input id="annual-income" name="annual-income" type="text"  class="form-control currency input-md" Value="2020 Mercedes Sports 2 Door Ltd Edition" >
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 col-12">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="rent-mortgage">Agent NIPR #</label>
+                                                    <input id="rent-mortgage" name="rent-mortgage" type="text" placeholder="$" class="form-control currency input-md" Value="749-605-494" >
+                                                </div>
+                                            </div>
+                                            <!-- Text input-->
+                                            <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 col-12">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="birth-date">Date Issued</label>
+                                                    <input id="birth-date" name="birth-date" type="date" class="form-control input-md" value="2021-04-15">
+                                                </div>
+                                            </div>
+                                            <!-- Text input-->
+                                            <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 col-12">
+                                                <div class="form-group">
+                                               <label class="control-label" for="birth-date">Date Cancelled</label>
+                                                    <input id="birth-date" name="birth-date" type="date" class="form-control input-md" value="2021-05-06">
+                                                
+                                                </div>
+                                            </div>
+												  <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 col-12">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="birth-date">Policy Premium</label>
+                                                    <input id="birth-date" name="birth-date" type="text" class="form-control input-md" value="$2,348.50">
+                                                </div>
+                                            </div>
+                                            <!-- Text input-->
+                                            <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 col-12">
+                                                <div class="form-group">
+                                               <label class="control-label" for="birth-date">Commission Rate</label>
+                                                    <input id="birth-date" name="birth-date" type="text" class="form-control input-md" value="10%">
+                                                
+                                                </div>
+                                            </div>
+												  <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 col-12">
+                                                <div class="form-group">
+                                                    <label class="control-label" for="birth-date">Commission Paid</label>
+                                                    <input id="birth-date" name="birth-date" type="text" class="form-control input-md" value="$234.85">
+                                                </div>
+                                            </div>
+                                            <!-- Text input-->
+                                            <div class="col-xl-6 col-lg-6 col-sm-12 col-xs-12 col-12">
+                                                <div class="form-group">
+                                               <label class="control-label" for="birth-date">Date Paid</label>
+                                                    <input id="birth-date" name="birth-date" type="date" class="form-control input-md" value="2021-05-30">
+                                                
+                                                </div>
+                                            </div>
+                                            <hr class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <div class="col-sm-12 col-12">
+                                                <p class="form-sub-title" style="color:#FB0105">Cancelled within 30 days - 100% clawback</p>
+                                            </div>
+												<hr class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+												 <div class="col-sm-12 col-12">
+                                                <p class="form-sub-title">Commission Dispute</p>
+                                            </div>
+                                            <!-- Text input-->
+                                                <div class="col-xl-8 col-lg-8 col-sm-12 col-xs-12 col-12">
+                                                    <div class="form-group residential-address">
+                                                        <label class="control-label" for="residential-address">Name of Agent</label>
+                                                        <input id="residential-address" name="residential-address" type="text" class="form-control input-md sm_cobrowsing_masked_field">
+                                                    </div>
+                                                </div>
+                                                <!-- Text input-->
+                                                <div class="col-xl-4 col-lg-4 col-sm-6 col-xs-12 col-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="suite-apt">Agent ID#<span class = " ">(if applicable)</span></label>
+                                                        <input id="suite-apt" name="suite-apt" type="text" class="form-control input-md">
+                                                    </div>
+                                                </div>
+                                                <!-- Text input-->
+                                                <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 col-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="email">Email</label>
+                                                        <input id="email" name="email" type="email" class="form-control input-md">
+                                                    </div>
+                                                </div>
+                                                <!-- Select input-->
+                                                <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 col-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="phone-type">Dispute reason</label>
+                                                        <select name = "phone-type" id="phone-type" class="form-control" >
+                                                            <option value="" disabled selected hidden>Select</option>
+                                                           <option value="categories" selected>Commission Dispute Categories</option>
+                            <option value="IssueDate">The policy issue date is inaccurate</option>
+                            <option value="Cancel Date">The policy cancellation date is inaccurate</option>
+                            <option value="Suspended">The policy was suspended</option>
+                            <option value="current">The policy was not cancelled</option>
+                            <option value="AgentID">Wrong Agent identified on the policy</option>
+                            <option value="AgentID">Amounts are incorrect</option>  
+                            <option value="Other">Other</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <!-- Text input-->
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="phone">Reason if "Other"</label>
+                                                        <input id="phone" name="phone" type="text" class="form-control input-md">
+                                                    </div>
+                                                </div>
+                                                <hr class="col-sm-12 col-12">
+                                     </form>
+								
+										<p>Load supporting documents: &nbsp;</p>
+
+<form action="/action_page.php">
+  <input type="file" id="myFile" name="filename">
+</form>		
+												
+                                </div> 
+											<div class="row">
+                                       <div class="col-xl-3 col-lg-3 col-3 col-xs-6 col-6">
+                                        <div class=""> <a href="portal-commission.html" class="btn btn-default">Submit Dispute&nbsp;</a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.section title start-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- /.content end -->
+    <div class="footer section-space100">
+        <!-- footer -->
+        <div class="container">
+            <hr class="dark-line">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="widget-text mt40">
+                        <!-- widget text -->
+                        <p>Our goal at Cortex Financial is to provide access to financial products that meet our customer's needs.</p>
+
+                    </div>
+                    <!-- /.widget text -->
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="widget-text mt40">
+                        <!-- widget text -->
+
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                                <p class="address-text"><span><i class="icon-placeholder-3 icon-1x"></i> </span>30 West 21st St, New York, NY 10504 </p>
+                            </div>
+                            <button class="omnibrowse-code-button btn btn-default" onclick="document.body.appendChild(document.createElement('sm-visitor-code'))">CoBrowse Code
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.widget text -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.footer -->
+    <div class="tiny-footer">
+        <!-- tiny footer -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                    <p>© Copyright 2021 | Cortex Financial</p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                    <p>Terms of use | Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.tiny footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/menumaker.js"></script>
+    <!-- Format Currecy -->
+    <script type="text/javascript" src="js/format_currency.js"></script>
+    <!-- sticky header -->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/sticky-header.js"></script>
+    <!-- Back to top script -->
+    <script src="js/back-to-top.js" type="text/javascript"></script>
+    <!-- Validate annual income field -->
+    <script type="text/javascript" src="js/default-application.js"></script>
+    <!-- SaleMove, This is where the magic happens! -->
+    <script src="//api.salemove.com/salemove_integration.js"></script>
+    <!-- Show Hide Language -->
+    <script type="text/javascript" src="js/language-toggle.js"></script>
+    <!--Close the menu in mobile view when opening languages-->
+    <script type="text/javascript" src="js/mobile-menu.js"></script>
+    <!--Check if it's banking/insurance and logged in/out-->
+    <script type="text/javascript" src="js/login-validation.js"></script>
+</body>
+
+<!-- Mirrored from salemove.github.io/demo-websites/sales-demo-site/training/application-autoinsurance.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 11 Apr 2021 19:35:07 GMT -->
+</html>

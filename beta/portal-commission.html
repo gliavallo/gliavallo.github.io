@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cortex Financial Demo</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/update-styles.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="css/dcf-responsive-table-5.css" rel="stylesheet" type="text/css">
+	
+	
+</head>
+
+<body onload="loggingToggle()">
+    <!-- /.top-bar -->
+    <div class="header-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 logo-login-button">
+                    <!-- logo -->
+                    <div class="logo">
+                        <img src="images/Cortex_v1_140x70px.png " alt="Cortex - Insurance Company Website Template">
+                    </div>
+                    <div class="login-section"></div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation-2">
+            <div class="container" onclick="menuCloser()">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div id="navigation">
+                        <!-- navigation start-->
+                            <ul id="menu-options">
+                                <li onmouseover="menuHover('homeDrop')" onmouseout="menuHoverOut('homeDrop')" id="homebutton" ><a href="" title="Home" class="animsition-link">Home</a>
+                                    <ul id="homeDrop">
+                                        <li><a href="index.html" title="Site Home" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Cortex Home</a></li>
+                                        <li><a href="portal-agentprofile.html" title="Portal Home" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Agent Profile</a></li>
+                                    </ul>
+                                </li>
+                                 <li onmouseover="menuHover('incentDrop')" onmouseout="menuHoverOut('incentDrop')" id="incentButton"><a href="" title="Incentives" class="animsition-link">Incentives</a>
+                                    <ul id="incentDrop">
+                                        <li><a href="portal-commission.html" title="Current commission" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Current Commission</a></li>
+                                        <li><a href="portal-commission2.html" title="Statements" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Statements</a></li>
+                           		</ul>
+                                </li>
+                                <li onmouseover="menuHover('custDrop')" onmouseout="menuHoverOut('custDrop')" id="custButton" ><a href="" title="Customers" class="animsition-link">Customers</a>
+                                    <ul id="custDrop">
+                                        <li><a href="portal-customers.html" title="Credit Cards" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Customer Accounts</a></li>
+                                        <li><a href="portal-policies.html" title="Policies" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Policies</a></li>
+                                        <li><a href="portal-claims.html" title="Claims" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Claims</a></li>
+                                    </ul>
+                                </li>
+                                <li onmouseover="menuHover('complianceDrop')" onmouseout="menuHoverOut('complianceDrop')"><a href="" class="animsition-link">Compliance</a>
+                                    <ul id="complianceDrop">
+                                        <li><a href="portal-licenses.html" title="Licenses" class="animsition-link" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Licenses</a></li>
+                                        <li><a href="portal-appointments.html" title="Appointments" class="animsition-link" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Appointments</a></li>
+                                        <li><a href="portal-appointmentapp.html" title="Insurance Portal" class="animsition-link" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Request Appointment</a></li>
+                                    </ul>
+                                </li>
+                                <li id="contact-us"><a href="beforetex.html" title="Contact us" class="animsition-link">Contact us</a></li>
+                            </ul>
+                            <ul id="language-list">
+                                <li onmouseover="menuHover('languageDrop')" onmouseout="menuHoverOut('languageDrop')" class="language-selector"><a href="#" title="Language" class="animsition-link">Language</a>
+                                    <ul id="languageDrop">
+                                        <li>
+                                            <a onclick="toggleSpanish();" href="#" title="Spanish" id="spanishLocale" class="btn" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Spanish</a>
+                                            <a onclick="toggleEnglish();" href="#" title="English" id="englishLocale" class="btn" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">English</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navigation start-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-header mobile-header">
+        <div class="container">
+            <div class="row">
+                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="bg-white pinside30">
+                        <div class="row">
+                           <div class="col-xl-4 col-md-9 col-sm-12 col-12 col-lg-5">
+                                <h1 class="page-title">Commission</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="account-summary-back">
+        <!-- content start -->
+        <div class="container">
+ <table class="dcf-table dcf-table-responsive dcf-table-bordered dcf-table-striped dcf-w-100%">
+   
+   <thead>
+		<tr scope="row">
+			<th scope="col">Policy #</th>
+			<th scope="col">Trans#</th>
+			<th scope="col">Type</th>
+			<th scope="col">Customer Name</th>
+			<th scope="col">Commission&nbsp;</th>
+	   </tr>
+	</thead>
+	<tbody>
+		<tr scope="row" style="line-height: 50px; background-color:#EFEDED">
+            <td scope="row" style="font-weight:bold">CI-402232</td>
+			<td>402232-543</td>
+			<td>Auto</td>
+			<td>Andrew James</td>
+			<td>$234.50</td>
+		</tr>
+		<tr style="line-height:50px">
+		  <td scope="row" style="font-weight:bold">CI-392754
+		    </td>
+			<td>392754-220</td>
+			<td>Auto</td>
+			<td>Suzanne Barkerl&nbsp;</td>
+			<td>302.56&nbsp;</td>
+		</tr>
+            <tr style="line-height:50px; background-color:#EFEDED">
+		  <td scope="row" style="font-weight:bold; color:#FB0105">CI-382956
+		    </td>
+			<td style="color:#FB0105">382956-433&nbsp;</td>
+			<td style="color:#FB0105">Auto</td>
+			<td style="color:#FB0105">David Atkins&nbsp;</td>
+                      <td style="color:#FB0105"><a href="portal-claim.html">$234.85</a></td>
+		</tr>	
+		<tr style="line-height:50px">
+		  <td scope="row" style="font-weight:bold">CI-364432
+		    </td>
+			<td>364432-670</td>
+			<td>Home</td>
+			<td>Peter Williamsonl&nbsp;</td>
+			<td>415.45</td>
+		</tr>		
+	<tr style="line-height:50px; background-color:#EFEDED">
+		  <td scope="row" style="font-weight:bold">CI-363092
+		    </td>
+			<td>363092-332</td>
+			<td>Auto</td>
+			<td>Candace Brewer&nbsp;</td>
+			<td>186.50</td>
+		</tr>
+	</tbody>
+</table>
+    </div>
+		
+		 </div>
+		
+	
+	
+	<div  class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12"><ul class="table-pagination">
+                        <li><a href="#">Previous</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li ><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">Next</a></li>
+                      </ul></div>
+
+	
+    <!-- /.content end -->
+    <div class="footer section-space100">
+        <!-- footer -->
+        <div class="container">
+            <hr class="dark-line">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="widget-text mt40">
+                        <!-- widget text -->
+                        <p>Our goal at Cortex Financial is to provide access to financial products that meet our customer's needs.</p>
+
+                    </div>
+                    <!-- /.widget text -->
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="widget-text mt40">
+                        <!-- widget text -->
+
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                                <p class="address-text"><span><i class="icon-placeholder-3 icon-1x"></i> </span>30 West 21st St, New York, NY 10504 </p>
+                            </div>
+                            <button class="omnibrowse-code-button btn btn-default" onclick="document.body.appendChild(document.createElement('sm-visitor-code'))">CoBrowse Code
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.widget text -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.footer -->
+    <div class="tiny-footer">
+        <!-- tiny footer -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                    <p>© Copyright 2021 | Cortex Financial</p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                    <p>Terms of use | Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.tiny footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/menumaker.js"></script>
+    <script type="text/javascript" src="js/format_currency.js"></script>
+    <!-- sticky header -->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/sticky-header.js"></script>
+    <!-- SaleMove, This is where the magic happens! -->
+    <script src="//api.salemove.com/salemove_integration.js"></script>
+    <!-- Show Hide Language -->
+    <script type="text/javascript" src="js/language-toggle.js"></script>
+    <!--Close the menu in mobile view when opening languages-->
+    <script type="text/javascript" src="js/mobile-menu.js"></script>
+    <!--Get the billing data-->
+    <script type="text/javascript" src="js/confirm-payment-data.js"></script>
+    <!--Check if the user is logged in-->
+    <script type="text/javascript" src="js/login-validation.js"></script>
+    <script type="text/javascript">
+        const externalId = sessionStorage.getItem("username");
+        sm.getApi({version: 'v1'}).then(function(salemove) {
+            salemove.updateInformation({
+                externalId: externalId
+            }).then(function(){
+        })
+});</script>
+</body>
+</html>

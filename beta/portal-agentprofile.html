@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cortex Financial Demo</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/update-styles.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Merriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body onload="loggingToggle()">
+    <!-- /.top-bar -->
+    <div class="header-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 logo-login-button">
+                    <!-- logo -->
+                    <div class="logo">
+                        <img src="images/Cortex_v1_140x70px.png " alt="Cortex - Insurance Company Website Template">
+                    </div>
+                    <div class="login-section"></div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation-2">
+            <div class="container" onclick="menuCloser()">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div id="navigation">
+                        <!-- navigation start-->
+                            <ul id="menu-options">
+                                <li onmouseover="menuHover('homeDrop')" onmouseout="menuHoverOut('homeDrop')" id="homebutton" ><a href="" title="Home" class="animsition-link">Home</a>
+                                    <ul id="homeDrop">
+                                        <li><a href="index.html" title="Site Home" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Cortex Home</a></li>
+                                        <li><a href="portal-agentprofile.html" title="Portal Home" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Agent Profile</a></li>
+                                    </ul>
+                                </li>
+                                 <li onmouseover="menuHover('incentDrop')" onmouseout="menuHoverOut('incentDrop')" id="incentButton"><a href="" title="Incentives" class="animsition-link">Incentives</a>
+                                    <ul id="incentDrop">
+                                        <li><a href="portal-commission.html" title="Current commission" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Current Commission</a></li>
+                                        <li><a href="portal-commission2.html" title="Statements" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Statements</a></li>
+                           		</ul>
+                                </li>
+                                <li onmouseover="menuHover('custDrop')" onmouseout="menuHoverOut('custDrop')" id="custButton" ><a href="" title="Customers" class="animsition-link">Customers</a>
+                                    <ul id="custDrop">
+                                        <li><a href="portal-customers.html" title="Credit Cards" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Customer Accounts</a></li>
+                                        <li><a href="portal-policies.html" title="Policies" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Policies</a></li>
+                                        <li><a href="portal-claims.html" title="Claims" class="animsition-link dropdownLink" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Claims</a></li>
+                                    </ul>
+                                </li>
+                                <li onmouseover="menuHover('complianceDrop')" onmouseout="menuHoverOut('complianceDrop')"><a href="" class="animsition-link">Compliance</a>
+                                    <ul id="complianceDrop">
+                                        <li><a href="portal-licenses.html" title="Licenses" class="animsition-link" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Licenses</a></li>
+                                        <li><a href="portal-appointments.html" title="Appointments" class="animsition-link" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Appointments</a></li>
+                                        <li><a href="portal-appointmentapp.html" title="Insurance Portal" class="animsition-link" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Request Appointment</a></li>
+                                    </ul>
+                                </li>
+                                <li id="contact-us"><a href="beforetex.html" title="Contact us" class="animsition-link">Contact us</a></li>
+                            </ul>
+                            <ul id="language-list">
+                                <li onmouseover="menuHover('languageDrop')" onmouseout="menuHoverOut('languageDrop')" class="language-selector"><a href="#" title="Language" class="animsition-link">Language</a>
+                                    <ul id="languageDrop">
+                                        <li>
+                                            <a onclick="toggleSpanish();" href="#" title="Spanish" id="spanishLocale" class="btn" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">Spanish</a>
+                                            <a onclick="toggleEnglish();" href="#" title="English" id="englishLocale" class="btn" onmouseover="optionHover(this)" onmouseout="optionHoverOut(this)">English</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navigation start-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-header mobile-header">
+        <div class="container">
+            <div class="row">
+                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="bg-white pinside30">
+                        <div class="row">
+                           <div class="col-xl-4 col-lg-4 col-md-9 col-sm-12 col-12">
+                                <h1 class="page-title">Agent Profile</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="account-summary-back">
+        <!-- content start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="wrapper-content bg-light summary-container">
+                        <div id="summary-payment">
+                            
+						  <div class= "child-header">
+                            <div class="control-label">
+                            AUTHENTICATED AGENT</div>
+                                <img src="images/authenticated.jpg" alt=""/>
+							 
+                            </div><hr>
+							
+							<div class= "child-header">
+                                <div class="control-label">
+                              current&nbsp; commission</div>
+                                <div class="payment-header-link">
+                                    <a href="portal-commission.html">Transactions</a>
+                                </div>
+                            </div>
+                            <hr class="mb30">
+                            <div id="payment-plan-content">
+                                <div>
+                                    <p>Commission Due</p>
+                                    <p>Scheduled Jun 30, 2021</p>
+                                </div>
+                                <p id="bill-sum">$3646.24</p>
+                            </div>
+							<hr>
+                          <div id="payment-plan-content2">
+                              <div class="form-group">
+                                                    <label class="control-label" for="type">Previous Statements</label>
+                                                    <select name = "type" id="type" class="form-control">
+                                                        <option valie="51">Choose Month</option>
+														<option valie="50">May 2021</option>
+                                                        <option value="a">April 2021</option>
+                                                        <option value="b">March 2021</option>
+                                                        <option value="c">February 2021</option>
+                                                        <option value="c">January 2021</option>
+                                                        <option value="c">December 2020</option>
+                                                        <option value="d">November 2020</option>
+                                                        <option value="e">October 2020</option>
+                                                        <option value="e">September 2020</option>
+                                                        
+                                                    </select>
+                                                </div>
+                 
+                          </div>
+                        </div>
+                        <div id="summary-banking">
+                            <div class="child-header">
+                                <div class="control-label">
+                                YOUR INFORMATION </div>
+                                
+                            </div>
+                            <hr class="mb30">
+                            <div class="summary-child-content">
+                                <img src="images/customers-p-sm.jpg"/>
+                                <div class="summary-child-text">
+                                    <a href="portal-customers.html">Customers</a>
+                              
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="summary-child-content">
+                                <img src="images/policies-p-sm.jpg">
+                                <div class="summary-child-text">
+                                    <a href="portal-policies.html">Policies</a>
+                            
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="summary-child-content">
+                                <img src="images/claims-p-sm.jpg"/>
+                                <div class="summary-child-text">
+                                    <a href="portal-claims.html">Claims</a>
+                  
+                                </div>
+                            </div>
+							<hr>
+							 <div class="summary-child-content">
+                                <img src="images/license-p-sm.jpg">
+                                <div class="summary-child-text">
+                                    <a href="portal-licenses.html">Licenses</a>
+                                  
+                                </div>
+                            </div>
+                            <hr>
+							 <div class="summary-child-content">
+                                <img src="images/appointment-p-sm.jpg">
+                                <div class="summary-child-text">
+                                    <a href="portal-appointments.html">Appointments</a>
+                                   
+                                </div>
+                            </div>
+                            <hr>
+						
+                        </div>
+                        <div id="summary-agent">
+							<img id="agent-photo" src= "images/advisor-p.jpg" alt="Agent photo" width="50px"/><hr>
+                            <!-- <div class="control-label">
+                                My personal banker
+                            </div> -->
+                            <div class="summary-child-content">
+                                
+								
+                                <div class="summary-child-text">
+                                    <p class="lead">Julie Anderson</p>
+                                    <p class="mb0">Address: 19 W 21st St, New York, NY 10010, USA</p>
+                                    <p>Contracted: Jan 2018</p>
+									<p>Phone: 212 885 4432, Mobile 917 443 2289</p>
+									<p>Email: janderson@waltersIns.com</p>
+									<p>Agent ID: 23885-JA</p>
+									<p>NIPR: 732-334-223</p>
+									<p>Licensed Agent</p> <p>AJ Walters Insurance</p>
+								<p>234 Riverdale Road, New York 10019</p>
+                                </div>
+                            </div>
+                            <div class="mt30 contact-link">
+                                <p>Contact Us</p>
+                                <img src="images/chat.svg" data-sm-show-media-selection-on="click" id="chat-button" alt="chat" />
+                            </div>
+                            <hr>
+                           <!--  <div class="feature-center">
+                                <a href="" class="btn-default-link">Change Agent</a>
+                            </div> -->
+                        </div>
+                        <div id="summary-accounts">
+                            <div class="control-label">
+                              Additional Incentives
+                          </div>
+                            <hr>
+                            <p class="rate-text">Latest incentives and promotions.</p>
+                            <p style="color:crimson">Additional 2% on Homeowners Premium Package</p> <br>
+                            <div class="mt10">
+                            <p style="color:crimson">Leaders Circle - Annual Premium + Claims Ratio Targets</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.content end -->
+    <div class="footer section-space100">
+        <!-- footer -->
+        <div class="container">
+            <hr class="dark-line">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="widget-text mt40">
+                        <!-- widget text -->
+                        <p>Our goal at Cortex Financial is to provide access to financial products that meet our customer's needs.</p>
+
+                    </div>
+                    <!-- /.widget text -->
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="widget-text mt40">
+                        <!-- widget text -->
+
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                                <p class="address-text"><span><i class="icon-placeholder-3 icon-1x"></i> </span>30 West 21st St, New York, NY 10504 </p>
+                            </div>
+                            <button class="omnibrowse-code-button btn btn-default" onclick="document.body.appendChild(document.createElement('sm-visitor-code'))">CoBrowse Code
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.widget text -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.footer -->
+    <div class="tiny-footer">
+        <!-- tiny footer -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                    <p>© Copyright 2021 | Cortex Financial</p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                    <p>Terms of use | Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.tiny footer -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/menumaker.js"></script>
+    <script type="text/javascript" src="js/format_currency.js"></script>
+    <!-- sticky header -->
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <script type="text/javascript" src="js/sticky-header.js"></script>
+    <!-- SaleMove, This is where the magic happens! -->
+    <script src="//api.salemove.com/salemove_integration.js"></script>
+    <!-- Show Hide Language -->
+    <script type="text/javascript" src="js/language-toggle.js"></script>
+    <!--Close the menu in mobile view when opening languages-->
+    <script type="text/javascript" src="js/mobile-menu.js"></script>
+    <!--Get the billing data-->
+    <script type="text/javascript" src="js/confirm-payment-data.js"></script>
+    <!--Check if the user is logged in-->
+    <script type="text/javascript" src="js/portal-validation.js"></script>
+    
+</body>
+</html>
